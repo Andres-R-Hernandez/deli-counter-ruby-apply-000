@@ -9,15 +9,29 @@ def line(katz_deli)
       line_message += " #{counter}. #{i}"
       counter += 1
     end
-    puts "#{line_message}"
+  puts "#{line_message}"
   end
 end
 
 #take_a_number Method
-def take_a_number(katz_deli,name)
-  katz_deli.push(name)
-  welcome = "Welcome, #{name}. You are number #{katz_deli.length} in line."
-  puts "#{welcome}"
+# def take_a_number(katz_deli,name)
+#   katz_deli.push(name)
+#   welcome = "Welcome, #{name}. You are number #{katz_deli.length} in line."
+#   puts "#{welcome}"
+# end
+
+def take_a_number(katz_deli)
+
+  counter = 0
+
+  katz_deli.push(counter)
+
+  welcome = "Welcome, #{counter}. You are number #{katz_deli.length} in line."
+
+  counter += 1
+
+  puts welcome
+
 end
 
 #now_serving Method
